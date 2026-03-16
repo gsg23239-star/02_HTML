@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:background-color="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+        flexbox : 정렬을 할 부모 요소 안에 자식 요소를 배치하는 방식
+-->
+<div style="display: flex;">
+    <div style="width: 100px; height: 100px; background-color: red;"></div>
+    <div style="width: 100px; height: 100px; background-color: blue;"></div>
+    <div style="width: 100px; height: 100px; background-color: orange;"></div>
+</div>
+
+<!--
+    결국, 큰 영역을 그리고 그안에 요소를 배치하는 방식임
+-->
+
+<div style="width: 100%; display: flex;">
+    <header style="width: 100px; height: 80px; display: flex; justify-content: space-between;">
+        <div>로고자리</div>
+        <div>메뉴자리</div>
+        <div>로그인자리</div>
+    </header>
+</div>
+
+<!--
+    justify-content 속성 : 메인 축에 대한 정렬을 뜻함
+                            : 기본은 가로 축이 메인임
+        flex-start : 시작점부터 정렬
+        flex-end : 끝점부터 정렬
+        space-between : 양 끝에 정렬시킨 뒤 나머지를 여백 크기가 동일하게 정렬
+        space-around : 중앙을 중심으로 양 옆 정렬
+-->
+<div style="width: 100%; display: flex; margin-bottom: 50px; border-bottom: 1px solid #ccc;">
+    <header style="width: 100%; max-width: 1200px; margin: 0 auto; height: 80px; display: flex; justify-content: space-between;">
+        <div style="background-color: red; display: flex; align-items: center; font-size: 5px;">로고자리</div>
+        <div style="background-color: blue; display: flex; align-items: center; font-size: 20px;">메뉴자리</div>
+        <div style="background-color: orange; display: flex; align-items: center; font-size: 10px;">로그인자리</div>
+    </header>
+</div>
+
+<div style="width: 100%; display: flex; margin-bottom: 50px; border-bottom: 1px solid #ccc;">
+    <header style="width: 100%; max-width: 1200px; margin: 0 auto; height: 80px; display: flex; justify-content: space-between;">
+        <div style="background-color: red; display: flex; align-items: center; font-size: 20px;">로고자리</div>
+        <div style="background-color: blue; display: flex; align-items: center; font-size: 35px;">메뉴자리</div>
+        <div style="background-color: orange; display: flex; align-items: center; font-size: 20px;">로그인자리</div>
+    </header>
+</div>
+
+<div style="width: 100%; display: flex; margin-bottom: 50px; border-bottom: 1px solid #ccc;">
+    <header style="width: 100%; max-width: 1200px; margin: 0 auto; height: 80px; display: flex; justify-content: space-between;">
+        <div style="width: 150px; background-color: red; display: flex; align-items: center; font-size: 20px;">로고자리</div>
+        <div style="flex-grow: 1; background-color: blue; display: flex; align-items:center; font-size: 20px;">메뉴자리</div>
+        <div style="width: 200px; background-color: orange; display: flex; align-items:center; font-size: 20px;">로그인자리</div>
+    </header>
+</div>
+
+<div style="width: 100%; display: flex; margin-bottom: 50px; border-bottom: 1px solid #ccc;">
+    <header style="width: 100%; max-width: 1200px; margin: 0 auto; height: 80px; display: flex; justify-content: space-between;">
+        <div style="width: 800px; background-color: red; display: flex; align-items: center; font-size: 20px;">로고자리</div>
+        <div style="width: 800px; background-color: blue; display: flex; align-items:center; font-size: 20px;">메뉴자리</div>
+        <div style="width: 200px; background-color: orange; display: flex; align-items:center; font-size: 20px;">로그인자리</div>
+    </header>
+</div>
+
+<div style="width: 100%; display: flex; gap: 10px; flex-direction:column;">
+    <div style="width: 300px; height: 300px; border-radius: 20px; background-color: #aaa;">card</div>
+    <div style="width: 300px; height: 300px; border-radius: 20px; background-color: #aaa;">card</div>
+    <div style="width: 300px; height: 300px; border-radius: 20px; background-color: #aaa;">card</div>
+    <div style="width: 300px; height: 300px; border-radius: 20px; background-color: #aaa;">card</div>
+    <div style="width: 300px; height: 300px; border-radius: 20px; background-color: #aaa;">card</div>
+    <div style="width: 300px; height: 300px; border-radius: 20px; background-color: #aaa;">card</div>
+    <div style="width: 300px; height: 300px; border-radius: 20px; background-color: #aaa;">card</div>
+    <div style="width: 300px; height: 300px; border-radius: 20px; background-color: #aaa;">card</div>
+    <div style="width: 300px; height: 300px; border-radius: 20px; background-color: #aaa;">card</div>
+    <div style="width: 300px; height: 300px; border-radius: 20px; background-color: #aaa;">card</div>
+</div>
+
+<div style="width: 100%; display: flex; gap: 10px; flex-direction:column;">
+    <div style="border-radius: 20px; background-color: #aaa;">card</div>
+    <div style="border-radius: 20px; background-color: #aaa;">card</div>
+    <div style="border-radius: 20px; background-color: #aaa;">card</div>
+    <div style="border-radius: 20px; background-color: #aaa;">card</div>
+</div>
+
+</body>
+</html>
