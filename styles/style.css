@@ -1,0 +1,54 @@
+.box {
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #e74c3c;
+}
+
+.content {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    height: 9000px;
+}
+.box {
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #e74c3c;
+}
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: #10f372;
+}
+
+.spacer {
+    height: 400px;
+    background-color: #10f372;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 8px;
+}
+.parent {
+    position: relative;
+    background-color: white;
+    padding: 40px;
+    border: 2px dashed #840606;
+}
+
+.child {
+    /* "relative"가 선언이 된 조상의 위치를 기준으로 자리를 잡겠다 */
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    background-color: #10f372ab;
+}
