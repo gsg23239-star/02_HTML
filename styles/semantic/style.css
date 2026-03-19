@@ -15,10 +15,10 @@ nav {
 
 nav ul {
     list-style: none;   /* ul에 있는, 점찍히는 스타일 삭제 */
-    padding: 0;
-    margin: 0;/* u1에 있는 , 기본 패딩ㅌ틀 0으로 변경 */
+    padding: 0;         /* ul에 있는 , 기본 패딩으로 0으로 변경 */
+    margin: 0;
     display: flex;
-    justify-content: center; /* ul의 아이쳄들을 중앙 정렬 */
+    justify-content: center; /* ul의 아이템들을 가로로 중앙 정렬 */
 }
 
 nav ul a {
@@ -29,7 +29,7 @@ nav ul a {
     text-decoration: none;
 }
 
-nav ul a: hover {
+nav ul a:hover {
     background-color: #69f31a;
 }
 
