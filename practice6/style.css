@@ -76,7 +76,7 @@ body {
     border-left-color: #3b82f6;
 }
 
-.main-comtent {
+.main-content {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -123,4 +123,5 @@ body {
     background-color: #dbeafe;
     color: #2563eb;
 }
+
 
